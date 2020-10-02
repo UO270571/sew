@@ -1,16 +1,71 @@
 body {
-	font: 400 15px Lucida Console,monospace;
+	font: 400 0.9em "Lucida Console",monospace;
 	background-color:#000000; 
 	color: #01DF01;
 	line-height: 1.8;
   }
+  
 h1 {
-	font: 400 50px Times New Roman, serif;
+	font: 400 3.5em "Times New Roman", serif;
 	background-color:#000000; 
 	color: #01DF01;
 	text-transform: uppercase;
-	padding: 75px 25px;
-	text-align: center;     
+	margin-top: 0.2em;
+	padding: 1.2em 0.7em;
+	text-align: center;
+	border: solid;
   }
+  
+h2 {
+	font: bold 1.8em "Lucida Console",monospace;
+	text-decoration: underline;
+	background-color:#000000; 
+	color: #01DF01;
+	line-height: 1.6;
+}
 
+ul {
+	font: 400 1.2em "Lucida Console",monospace;
+	list-style-type: square;
+	line-height: 1.8;
+}
 
+table {
+	margin-bottom: 2.5em;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+table, th, td {
+	border: 0.1em solid;
+}
+
+th {
+	font:bold 1.3em "Lucida Console",monospace;
+	background-color: green;
+	color: #000000;
+	border-color: #01DF01;
+	height: 3em;
+	padding: 1em;
+}
+
+td {
+	font: 400 1.1em "Lucida Console",monospace;
+	height: 2em;
+	text-align: center;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+	color: lightgreen;
+	background-color: #000000;
+}
+
+a:hover, a:active {
+	text-decoration: underline;
+}
+
+footer {
+	font: 400 0.87em "Lucida Console",monospace;
+	text-align: right;
+}
