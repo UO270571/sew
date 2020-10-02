@@ -1,0 +1,16 @@
+body {
+	font: 400 15px Lucida Console,monospace;
+	background-color:#000000; 
+	color: #01DF01;
+	line-height: 1.8;
+  }
+h1 {
+	font: 400 50px Times New Roman, serif;
+	background-color:#000000; 
+	color: #01DF01;
+	text-transform: uppercase;
+	padding: 75px 25px;
+	text-align: center;     
+  }
+
+
