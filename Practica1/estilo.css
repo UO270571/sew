@@ -33,8 +33,14 @@ ul {
 
 table {
 	margin-bottom: 2.5em;
-	width: 102em;
+	width: 100%;
 	border-collapse: collapse;
+}
+
+@media only screen and (max-width: 992px) {
+	table {
+		height: 100em;
+	}
 }
 
 table, th, td {
