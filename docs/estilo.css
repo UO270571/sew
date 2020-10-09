@@ -16,6 +16,22 @@ h1 {
 	text-align: center;
 	border: solid;
   }
+
+  nav {
+	background-color: #00af00;
+	color: #000000;
+  }
+
+  nav a:link, nav a:visited {
+	background-color: #00af00;
+	color: #000000;
+	text-decoration: underline;
+  }
+
+  ol {
+	font: bold 1.3em "Times New Roman", serif;
+	list-style-type: upper-roman;
+  }
   
 h2 {
 	font: bold 1.8em "Lucida Console",monospace;
@@ -25,10 +41,29 @@ h2 {
 	line-height: 1.6;
 }
 
+h3 {
+	font: bold 1.7em "Lucida Console",monospace;
+	background-color:#000000; 
+	color: #01DF01;
+	line-height: 1.6;
+}
+
+h4 {
+	font: bold 1.1em "Lucida Console",monospace;
+	background-color:#000000; 
+	color: #01DF01;
+	line-height: 1.6;
+}
+
 ul {
 	font: 400 1.2em "Lucida Console",monospace;
 	list-style-type: square;
 	line-height: 1.8;
+}
+
+video {
+	border: solid;
+	border-color: #01DF01;
 }
 
 table {
