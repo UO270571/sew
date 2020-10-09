@@ -1,0 +1,21 @@
+nav ol{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+@media only screen and (max-width: 992px) {
+	nav ol{
+        display: flex;
+        flex-flow: column wrap;
+    }
+}
+
+nav ol li {
+    margin-right: 3em;
+}
+
+#protagonistas {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+}
