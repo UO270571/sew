@@ -4,7 +4,19 @@ body {
 	background-color:#000000; 
 	color: #01DF01;
 	line-height: 1.8;
-  }
+}
+
+/* a = 0, b = 0, c = 1 -> Especificidad = 1 */
+article {
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
 
 /* a = 0, b = 0, c = 1 -> Especificidad = 1 */
 h1 {
@@ -24,11 +36,16 @@ nav {
 	color: #000000;
 }
 
+/* a = 0, b = 0, c = 3 -> Especificidad = 3 */
+nav li::first-letter {
+	text-decoration: underline;
+}
+
 /* a = 0, b = 1, c = 2 -> Especificidad = 12 */
 nav a:link, nav a:visited {
 	background-color: #00af00;
 	color: #000000;
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 /* a = 0, b = 0, c = 1 -> Especificidad = 1 */
@@ -75,39 +92,18 @@ video {
 	border-color: #01DF01;
 }
 
+@media only screen and (max-width: 992px) {
+	/* a = 0, b = 0, c = 1 -> Especificidad = 1 */
+	video {
+		width: 18em;
+	}
+}
+
 /* a = 0, b = 0, c = 1 -> Especificidad = 1 */
 table {
 	margin-bottom: 2.5em;
 	width: 100%;
 	border-collapse: collapse;
-}
-
-
-@media only screen and (max-width: 992px) {
-	/* a = 0, b = 0, c = 1 -> Especificidad = 1 */
-	ol {
-		font: bold 2em "Times New Roman", serif;
-	}
-
-	/* a = 0, b = 0, c = 2 -> Especificidad = 2 */
-	table th {
-		font-size: 2em;
-	}
-
-	/* a = 0, b = 0, c = 2 -> Especificidad = 2 */
-	table td {
-		font-size: 1.7em;
-	}
-
-	/* a = 0, b = 0, c = 1 -> Especificidad = 1 */
-	table {
-		height: 100em;
-	}
-
-	/* a = 0, b = 0, c = 2 -> Especificidad = 2 */
-	body footer {
-		font-size: 1.7em;
-	}
 }
 
 /* a = 0, b = 0, c = 1 -> Especificidad = 1 */
