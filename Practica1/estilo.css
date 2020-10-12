@@ -87,12 +87,26 @@ table {
 	/* a = 0, b = 0, c = 1 -> Especificidad = 1 */
 	ol {
 		font: bold 2em "Times New Roman", serif;
-		list-style-type: upper-roman;
+	}
+
+	/* a = 0, b = 0, c = 2 -> Especificidad = 2 */
+	table th {
+		font-size: 2em;
+	}
+
+	/* a = 0, b = 0, c = 2 -> Especificidad = 2 */
+	table td {
+		font-size: 1.7em;
 	}
 
 	/* a = 0, b = 0, c = 1 -> Especificidad = 1 */
 	table {
 		height: 100em;
+	}
+
+	/* a = 0, b = 0, c = 2 -> Especificidad = 2 */
+	body footer {
+		font-size: 1.7em;
 	}
 }
 
