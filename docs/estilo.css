@@ -5,7 +5,8 @@ body {
 	color: #01DF01;
 	line-height: 1.8;
   }
-  
+
+/* a = 0, b = 0, c = 1 -> Especificidad = 1 */
 h1 {
 	font: 400 3.5em "Times New Roman", serif;
 	background-color:#000000; 
@@ -15,24 +16,28 @@ h1 {
 	padding: 1.2em 0.7em;
 	text-align: center;
 	border: solid;
-  }
+}
 
-  nav {
+/* a = 0, b = 0, c = 1 -> Especificidad = 1 */
+nav {
 	background-color: #00af00;
 	color: #000000;
-  }
+}
 
-  nav a:link, nav a:visited {
+/* a = 0, b = 1, c = 2 -> Especificidad = 12 */
+nav a:link, nav a:visited {
 	background-color: #00af00;
 	color: #000000;
 	text-decoration: underline;
-  }
+}
 
-  ol {
+/* a = 0, b = 0, c = 1 -> Especificidad = 1 */
+ol {
 	font: bold 1.3em "Times New Roman", serif;
 	list-style-type: upper-roman;
-  }
+}
   
+/* a = 0, b = 0, c = 1 -> Especificidad = 1 */
 h2 {
 	font: bold 1.8em "Lucida Console",monospace;
 	text-decoration: underline;
@@ -41,6 +46,7 @@ h2 {
 	line-height: 1.6;
 }
 
+/* a = 0, b = 0, c = 1 -> Especificidad = 1 */
 h3 {
 	font: bold 1.7em "Lucida Console",monospace;
 	background-color:#000000; 
@@ -48,6 +54,7 @@ h3 {
 	line-height: 1.6;
 }
 
+/* a = 0, b = 0, c = 1 -> Especificidad = 1 */
 h4 {
 	font: bold 1.1em "Lucida Console",monospace;
 	background-color:#000000; 
@@ -55,33 +62,46 @@ h4 {
 	line-height: 1.6;
 }
 
+/* a = 0, b = 0, c = 1 -> Especificidad = 1 */
 ul {
 	font: 400 1.2em "Lucida Console",monospace;
 	list-style-type: square;
 	line-height: 1.8;
 }
 
+/* a = 0, b = 0, c = 1 -> Especificidad = 1 */
 video {
 	border: solid;
 	border-color: #01DF01;
 }
 
+/* a = 0, b = 0, c = 1 -> Especificidad = 1 */
 table {
 	margin-bottom: 2.5em;
 	width: 100%;
 	border-collapse: collapse;
 }
 
+
 @media only screen and (max-width: 992px) {
+	/* a = 0, b = 0, c = 1 -> Especificidad = 1 */
+	ol {
+		font: bold 2em "Times New Roman", serif;
+		list-style-type: upper-roman;
+	}
+
+	/* a = 0, b = 0, c = 1 -> Especificidad = 1 */
 	table {
 		height: 100em;
 	}
 }
 
+/* a = 0, b = 0, c = 1 -> Especificidad = 1 */
 table, th, td {
 	border: 0.1em solid;
 }
 
+/* a = 0, b = 0, c = 1 -> Especificidad = 1 */
 th {
 	font:bold 1.3em "Lucida Console",monospace;
 	background-color: #00af00;
@@ -91,6 +111,7 @@ th {
 	padding: 1em;
 }
 
+/* a = 0, b = 0, c = 1 -> Especificidad = 1 */
 td {
 	font: 400 1.1em "Lucida Console",monospace;
 	height: 2em;
@@ -104,10 +125,12 @@ a:link, a:visited {
 	background-color: #000000;
 }
 
+/* a = 0, b = 1, c = 1 -> Especificidad = 11 */
 a:hover, a:active {
 	text-decoration: underline;
 }
 
+/* a = 0, b = 0, c = 1 -> Especificidad = 1 */
 footer {
 	font: 400 0.87em "Lucida Console",monospace;
 	text-align: right;

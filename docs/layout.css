@@ -4,9 +4,15 @@ nav ol{
 }
 
 @media only screen and (max-width: 992px) {
-	nav ol{
+
+    nav ol{
         display: flex;
         flex-flow: column wrap;
+    }
+
+    nav ol li {
+        margin-top: 0.3em;
+        margin-bottom: 0.3em; 
     }
 }
 
