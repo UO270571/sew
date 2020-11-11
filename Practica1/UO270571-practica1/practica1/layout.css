@@ -1,0 +1,37 @@
+/* a = 0, b = 0, c = 1 -> Especificidad = 1 */
+body{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+/* a = 0, b = 0, c = 2 -> Especificidad = 2 */
+nav ol{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/* a = 0, b = 0, c = 3 -> Especificidad = 3 */
+nav ol li {
+    margin-right: 3em;
+}
+
+/* a = 1, b = 0, c = 0 -> Especificidad = 100 */
+#protagonistas {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+}
+
+/* a = 1, b = 0, c = 0 -> Especificidad = 100 */
+#trailers {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+
+/* a = 1, b = 0, c = 0 -> Especificidad = 100 */
+#criticas {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}

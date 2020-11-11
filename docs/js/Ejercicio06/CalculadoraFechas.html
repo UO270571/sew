@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Calculadora de fechas</title>
+        <link rel="stylesheet" href="Calculadora.css"/>
+        <script src="Calculadora.js"></script>
+    </head>
+    <body>
+        <h1>Calculadora de Fechas</h1>
+        <p> Introduce una fecha: </p>
+        <p class = "campos">
+            Día:
+            <input type="text" id ="dia"/>
+            Mes:
+            <input type="text" id = "mes"/>
+            Año:
+            <input type="text" id = "anyo"/>
+            <input type="button" value="Ver información" onClick = "calc.calcular()"/>
+        </p>
+        <div id = "info"></div>
+    </body>
+</html>

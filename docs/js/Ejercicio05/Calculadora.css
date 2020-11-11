@@ -1,0 +1,35 @@
+body{
+    background-color:white;
+    color:black;
+}
+h1{
+    text-align:start;
+    font-family: Arial, Helvetica, sans-serif;
+    color:red;
+}
+
+textarea {
+    resize: none;
+    text-align: end;
+}
+
+input.operador {
+    background-color: red;
+    color: white;
+}
+
+input.func {
+    background-color: blue;
+    color: white;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 5em 5em 5em 5em;
+}
+
+main input {
+    margin: 0.7em;
+    width: 3.6em;
+    border-radius: 15%;
+}

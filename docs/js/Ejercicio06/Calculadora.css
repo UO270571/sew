@@ -1,0 +1,26 @@
+body{
+    background-color:white;
+    color:black;
+}
+h1{
+    text-align:start;
+    font-family: Arial, Helvetica, sans-serif;
+    color:red;
+}
+
+input[type = "text"] {
+    width: 4em;
+    margin-right: 1em;
+}
+
+@media only screen and (max-width: 992px) {
+    .campos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .campos * {
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+}

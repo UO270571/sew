@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Calculadora científica</title>
+        <link rel="stylesheet" href="CalculadoraCientifica.css"/>
+        <script src="CalculadoraCientifica.js"></script>
+    </head>
+    <body>
+        <h1>Calculadora Científica</h1>
+        <p><input type="text" id="expresion" disabled/></p>
+        <main>
+            <input type="button" class= "func" value="sin" onClick = "calc.clickFunc('sin')"/>
+            <input type="button" class= "func" value="cos" onClick = "calc.clickFunc('cos')"/>
+            <input type="button" class= "func" value="tan" onClick = "calc.clickFunc('tan')"/>
+            <input type="button" class= "operador" value="x^2" onClick = "calc.clickOperator('**2')"/>
+            <input type="button" class= "func" value="asin" onClick = "calc.clickFunc('asin')"/>
+            <input type="button" class= "func" value="acos" onClick = "calc.clickFunc('acos')"/>
+            <input type="button" class= "func" value="atan" onClick = "calc.clickFunc('atan')"/>
+            <input type="button" class= "operador" value="x^y" onClick = "calc.clickOperator('**')"/>
+            <input type="button" class= "func" value="log" onClick = "calc.clickFunc('log')"/>
+            <input type="button" class= "func" value="ln" onClick = "calc.clickFunc('ln')"/>
+            <input type="button" class= "func" value="e^x" onClick = "calc.clickFunc('exp')"/>
+            <input type="button" class= "func" value="sqrt" onClick = "calc.clickFunc('sqrt')"/>
+            <input type="button" value="(" onClick = "calc.clickOpenP()"/>
+            <input type="button" value=")" onClick = "calc.clickCloseP()"/>
+            <input type="button" value="pi" onClick = "calc.clickNum('pi')"/>
+            <input type="button" value="e" onClick = "calc.clickNum('e')"/>
+            <input type="button" class= "memoria" value="MRC" onClick = "calc.clickMrc()"/>
+            <input type="button" class= "memoria" value="M+" onClick = "calc.clickMplus()"/>
+            <input type="button" class= "memoria" value="M-" onClick = "calc.clickMminus()"/>
+            <input type="button" class= "operador" value="/" onClick = "calc.clickOperator('/')"/>
+            <input type="button" value="7" onClick = "calc.clickNum(7)"/>
+            <input type="button" value="8" onClick = "calc.clickNum(8)"/>
+            <input type="button" value="9" onClick = "calc.clickNum(9)"/>
+            <input type="button" class= "operador" value="*" onClick = "calc.clickOperator('*')"/>
+            <input type="button" value="4" onClick = "calc.clickNum(4)"/>
+            <input type="button" value="5" onClick = "calc.clickNum(5)"/>
+            <input type="button" value="6" onClick = "calc.clickNum(6)"/>
+            <input type="button" class= "operador" value="-" onClick = "calc.clickOperator('-')"/>
+            <input type="button" value="1" onClick = "calc.clickNum(1)"/>
+            <input type="button" value="2" onClick = "calc.clickNum(2)"/>
+            <input type="button" value="3" onClick = "calc.clickNum(3)"/>
+            <input type="button" class= "operador" value="+" onClick = "calc.clickOperator('+')"/>
+            <input type="button" value="0" onClick = "calc.clickNum(0)"/>
+            <input type="button" value="." onClick = "calc.clickDot()"/>
+            <input type="button" value="C" onClick = "calc.clickClear()"/>
+            <input type="button" value="=" onClick = "calc.clickEqual()"/>
+        </main>
+    </body>
+</html>
