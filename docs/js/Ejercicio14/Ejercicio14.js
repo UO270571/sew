@@ -26,6 +26,23 @@ function draw() {
     window.addEventListener("mouseup", function(e) {
         drawing = false;
     }, false);
+
+    canvas.addEventListener("touchmove", function(e) {
+        if(drawing) {
+            ctx.lineTo(e.clientX - offsetX, e.clientY - offsetY);
+            ctx.stroke();
+        }
+    }, false);
+
+    canvas.addEventListener("touchstart", function(e) {
+        drawing = true;
+        ctx.beginPath();
+        ctx.moveTo(e.clientX - offsetX, e.clientY - offsetY);
+    }, false);
+
+    window.addEventListener("touchend", function(e) {
+        drawing = false;
+    }, false);
 }
 
 
