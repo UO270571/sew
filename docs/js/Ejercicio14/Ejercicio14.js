@@ -10,19 +10,6 @@ function draw() {
 
     var drawing = false;
 
-    function fullscreen(){
-        var el = document.getElementById('canvas');
-
-        if(el.webkitRequestFullScreen) {
-            el.webkitRequestFullScreen();
-        }
-       else {
-          el.mozRequestFullScreen();
-       }            
-    }
-
-    canvas.addEventListener("click",fullscreen)
-
     function getPos(e) {
         var pos = new Object();
         if(e instanceof TouchEvent) {
@@ -53,6 +40,10 @@ function draw() {
     function stopDrawing(e) {
         drawing = false;
     }
+
+    window.addEventListener("deviceorientation", function(e) {
+        ctx.canvas.width = window.innerWidth;
+    }, true);
 
     canvas.addEventListener("mousemove", draw, false);
 
