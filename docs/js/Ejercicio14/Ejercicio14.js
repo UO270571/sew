@@ -10,39 +10,61 @@ function draw() {
 
     var drawing = false;
 
-    canvas.addEventListener("mousemove", function(e) {
+    function fullscreen(){
+        var el = document.getElementById('canvas');
+
+        if(el.webkitRequestFullScreen) {
+            el.webkitRequestFullScreen();
+        }
+       else {
+          el.mozRequestFullScreen();
+       }            
+    }
+
+    canvas.addEventListener("click",fullscreen)
+
+    function getPos(e) {
+        var pos = new Object();
+        if(e instanceof TouchEvent) {
+            pos.x = e.targetTouches[0].clientX - offsetX;
+            pos.y = e.targetTouches[0].clientY - offsetY;
+        } else {
+            pos.x = e.clientX - offsetX;
+            pos.y = e.clientY - offsetY;
+        }
+        return pos;
+    }
+
+    function draw(e) {
         if(drawing) {
-            ctx.lineTo(e.clientX - offsetX, e.clientY - offsetY);
+            var pos = getPos(e);
+            ctx.lineTo(pos.x, pos.y);
             ctx.stroke();
         }
-    }, false);
+    }
 
-    canvas.addEventListener("mousedown", function(e) {
+    function startDrawing(e) {
         drawing = true;
+        var pos = getPos(e);
         ctx.beginPath();
-        ctx.moveTo(e.clientX - offsetX, e.clientY - offsetY);
-    }, false);
+        ctx.moveTo(pos.x, pos.y);
+    }
 
-    window.addEventListener("mouseup", function(e) {
+    function stopDrawing(e) {
         drawing = false;
-    }, false);
+    }
 
-    canvas.addEventListener("touchmove", function(e) {
-        if(drawing) {
-            ctx.lineTo(e.clientX - offsetX, e.clientY - offsetY);
-            ctx.stroke();
-        }
-    }, false);
+    canvas.addEventListener("mousemove", draw, false);
 
-    canvas.addEventListener("touchstart", function(e) {
-        drawing = true;
-        ctx.beginPath();
-        ctx.moveTo(e.clientX - offsetX, e.clientY - offsetY);
-    }, false);
+    canvas.addEventListener("mousedown", startDrawing, false);
 
-    window.addEventListener("touchend", function(e) {
-        drawing = false;
-    }, false);
+    window.addEventListener("mouseup", stopDrawing, false);
+
+    canvas.addEventListener("touchmove", draw, false);
+
+    canvas.addEventListener("touchstart", startDrawing, false);
+
+    window.addEventListener("touchend", stopDrawing, false);
 }
 
 
