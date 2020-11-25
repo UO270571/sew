@@ -1,0 +1,16 @@
+body{
+    text-align: center;
+    background-color:white;
+    color:black;
+    margin: 0em;
+}
+h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color:red;
+}
+
+canvas {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
