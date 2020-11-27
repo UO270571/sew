@@ -4,13 +4,43 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>Ejercicio 14</title>
+        <title>Pizarra virtual</title>
         <link rel="stylesheet" href="Ejercicio14.css"/>
+        <link rel="stylesheet" href="Ejercicio14movil.css"/>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src = "Ejercicio14.js"></script>
     </head>
-    <body onload="draw();">
-        <h1>Ejercicio 14</h1>
-        <canvas id = "canvas" height="600"></canvas>
+    <body onload="pizarra.load()">
+        <h1>Pizarra Virtual</h1>
+        <ul id = "ajustes">
+            <li>
+                <label for="herramienta">Herramienta:</label>
+                <select id = "herramienta" onchange="pizarra.cambiarPropiedad('globalCompositeOperation', 'herramienta')">
+                    <option value = "source-over" >Dibujar</option>
+                    <option value = "destination-out" >Borrar</option>
+                </select>
+            </li>
+            <li>
+                <label for="grosor">Grosor:</label>
+                <input type="range" id ="grosor" min = "1" max = "15" onchange="pizarra.cambiarPropiedad('lineWidth', 'grosor')"/>
+            </li>
+            <li>
+                <label for="color">Color:</label>
+                <input id = "color" type="color"  onchange="pizarra.cambiarPropiedad('strokeStyle', 'color')"/>
+            </li>
+            <li>
+                <input type = "button" value="Borrar todo" onclick="pizarra.borrarTodo()"/>
+            </li>
+        </ul>
+        <canvas id = "canvas" height="590"></canvas>
+        <ul id = "archivos">
+            <li>
+                <label for="cargar">Cargar una imagen:</label>
+                <input id = "cargar" type = "file" onchange="pizarra.cargarImagen(this.files)"/>
+            </li>
+            <li>
+                <input type = "button" value="Descargar" onclick="pizarra.download()"/>
+            </li>   
+        </ul>
     </body>
 </html>

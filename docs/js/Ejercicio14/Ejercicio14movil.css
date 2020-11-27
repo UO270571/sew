@@ -1,0 +1,19 @@
+@media only screen and (max-width: 992px) {
+    #ajustes {
+        display: flex;
+        flex-flow: column wrap;
+        list-style-type: none;
+    }
+    
+    #archivos {
+        display: flex;
+        flex-flow: column wrap;
+        margin-top: 0.3125em;
+        list-style-type: none;
+    }
+
+    #archivos li {
+        margin-bottom: 0.3125em;
+    }
+    
+}
