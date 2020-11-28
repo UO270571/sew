@@ -60,9 +60,9 @@ class CalculadoraFechas {
         var bisiesto = this.esBisiesto(this.fecha.getFullYear()) ? "Sí</li>" : "No</li>";
         result += "<li>Año bisiesto: " + bisiesto;
         result += '<li> <p>Introduce otra fecha para calcular los días entre las dos fechas: </p>' +
-            '<p class = "campos">Día: <input type="text" id ="dia2"/>' + 
-            'Mes: <input type="text" id = "mes2"/>' +
-            'Año: <input type="text" id = "anyo2"/>' +
+            '<p class = "campos"><label for = "dia2">Día:</label><input type="text" id ="dia2"/>' + 
+            '<label for = "mes2">Mes:</label><input type="text" id = "mes2"/>' + 
+            '<label for = "anyo2">Año:</label><input type="text" id = "anyo2"/>' +
             '<input type="button" value="Calcular" onClick = "calc.calcularDias()"/> </p></li>';
         return result + '<li id = "resultado"></li></ul>';
     }
