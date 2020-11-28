@@ -7,7 +7,7 @@ class DatosCiudad {
         this.ciudad = ciudad;
         this.idioma = "es";
         this.unidades = "metric";
-        this.url = "http://api.openweathermap.org/data/2.5/weather?q=" + this.ciudad + "&units=" + this.unidades + "&lang=" + this.idioma + "&appid=" + this.apiKey;
+        this.url = "https://api.openweathermap.org/data/2.5/weather?q=" + this.ciudad + "&units=" + this.unidades + "&lang=" + this.idioma + "&appid=" + this.apiKey;
     }
 
     obtenerDatos() {
@@ -18,7 +18,7 @@ class DatosCiudad {
             context: this,
             success: this.guardarDatos,
             error: function(){
-                $("body").append("<p>No se pudo obtener el XML de <a href='http://openweathermap.org'>OpenWeatherMap</a></p>"); 
+                $("body").append("<p>No se pudo obtener el JSON de <a href='https://openweathermap.org'>OpenWeatherMap</a></p>"); 
             }
         });
     }
