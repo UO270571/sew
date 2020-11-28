@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Traductor</title>
+        <link rel="stylesheet" href="Ejercicio10.css"/>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="Ejercicio10.js"></script>
+    </head>
+    <body>
+        <h1>Traductor</h1>
+        <p>
+            <label for="idiomasOrigen">Idioma de origen:</label>
+            <select id = "idiomasOrigen" name="idiomasOrigen">
+                <option value = "detectar" >Detectar idioma</option>
+            </select>
+        </p>
+        <p>
+            <textarea id = "texto" rows="10" cols="50">Introducir texto</textarea>
+        </p>
+        <p>
+            <label for="idiomas">Idioma de destino:</label>
+            <select id = "idiomas" name="idiomas"></select>
+            <input type="button" value="Traducir" onclick="traductor.traducir()"/>
+        </p>
+        <p>
+            <textarea id = "resultado" rows="10" cols="50" disabled>Traducción</textarea>
+        </p>
+        
+    </body>
+</html>

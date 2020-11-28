@@ -25,7 +25,6 @@ class Calculadora {
         if(this.error)
             this.expresion = "";
         this.error = false;
-        this.mrcUltimoPulsado = false;
     }
 
     afterClick() {
@@ -58,13 +57,14 @@ class Calculadora {
         this.afterClick();
     }
 
-    clickMrc() {
-        if (this.mrcUltimoPulsado)
-            this.memoria = 0;
-        this.beforeClick();    
-        this.mrcUltimoPulsado = true;       
-        this.expresion = "" + this.memoria;
+    clickMr() {
+        this.beforeClick();  
+        this.expresion += this.memoria;
         this.afterClick();
+    }
+
+    clickMc() {
+        this.memoria = 0;
     }
 
     clickNum(n){

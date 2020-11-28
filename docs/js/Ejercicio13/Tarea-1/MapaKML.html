@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Mapa KML</title>
+        <link rel="stylesheet" href="MapaKML.css"/>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-storage.js"></script>
+        <script src="MapaKML.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6j4mF6blrc4kZ54S6vYZ2_FpMY9VzyRU&callback=mapa.crearMapa"></script>
+    </head>
+    <body>
+        <h1>Mapa KML</h1>
+        <p><em>Seleccione un archivo KML: </em><input type="file" id="archivo" onchange="mapa.leerKML(this.files)"></p>    
+        
+        <div id = "mapa"></div>
+    </body>
+</html>

@@ -28,6 +28,12 @@ main {
     grid-template-columns: 5em 5em 5em 5em;
 }
 
+#enter {
+    margin: 0.7em;
+    width: 21.7em;
+    border-radius: 0.5em;
+}
+
 main input {
     margin: 0.7em;
     width: 3.6em;

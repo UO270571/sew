@@ -13,6 +13,10 @@ input[type = "text"] {
     margin-right: 1em;
 }
 
+#resultado {
+    list-style-type: none;
+}
+
 @media only screen and (max-width: 992px) {
     .campos {
         display: flex;

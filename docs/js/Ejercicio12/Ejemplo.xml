@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<current>
+   <city id="3114711" name="Oviedo">
+      <coord lon="-5.84" lat="43.36" />
+      <country>ES</country>
+      <timezone>3600</timezone>
+      <sun rise="2020-11-20T07:23:34" set="2020-11-20T16:54:54" />
+   </city>
+   <temperature value="15.19" min="15" max="15.56" unit="celsius" />
+   <feels_like value="13.4" unit="celsius" />
+   <humidity value="61" unit="%" />
+   <pressure value="1037" unit="hPa" />
+   <wind>
+      <speed value="1.79" unit="m/s" name="Light breeze" />
+      <gusts value="2.24" />
+      <direction value="135" code="SE" name="SouthEast" />
+   </wind>
+   <clouds value="22" name="few clouds" />
+   <visibility value="10000" />
+   <precipitation mode="no" />
+   <weather number="801" value="algo de nubes" icon="02d" />
+   <lastupdate value="2020-11-20T10:54:57" />
+</current>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><kml xmlns="http://www.opengis.net/kml/2.2"><Document><name>Rutas</name><description>Rutas en bicicleta por Asturias</description><Placemark><name>Ruta de Oviedo a Trubia</name><description>Ruta en bicicleta de Oviedo a Trubia siguiendo la antigua línea de tren</description><LineString><coordinates>-5.852988,43.350262,210
+ -5.922837,43.318314,118
+ -5.929515,43.331112,97
+ -5.973696,43.344064,88
+ </coordinates></LineString></Placemark><Placemark><name>Ruta de Oviedo a Bueño</name><description>Ruta desde el Parque de Invierno en Oviedo hasta Bueño para ver sus famosos hórreos</description><LineString><coordinates>-5.852988,43.350262,210
+ -5.868386,43.333815,187
+ -5.870165,43.312378,150
+ -5.896043,43.315850,119
+ </coordinates></LineString></Placemark><Placemark><name>Ruta de Oviedo a Olloniego</name><description>Ruta desde el Parque de Invierno hasta Olloniego</description><LineString><coordinates>-5.852988,43.350262,210
+ -5.868386,43.333815,187
+ -5.869424,43.311773,150
+  -5.860512,43.307545,132
+ -5.825414,43.299045,149
+ </coordinates></LineString></Placemark></Document></kml>

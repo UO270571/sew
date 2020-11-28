@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Calculadora RPN</title>
         <link rel="stylesheet" href="Calculadora.css"/>
@@ -10,7 +10,7 @@
     </head>
     <body>
         <h1>Calculadora RPN</h1>
-        <textarea id = "pantalla" rows = "10" cols="40" disabled></textarea>
+        <textarea id = "pantalla" rows = "10" cols="40" disabled>-></textarea>
         <main>
             <input type="button" class= "func" value="sin" onClick = "calc.clickFunc(Math.sin)"/>
             <input type="button" class= "func" value="cos" onClick = "calc.clickFunc(Math.cos)"/>
@@ -40,7 +40,7 @@
             <input type="button" value="." onClick = "calc.clickNum('.')"/>
             <input type="button" value="C" onClick = "calc.clear()"/>
             <input type="button" class= "operador" value="+" onClick = "calc.clickOperator('+')"/>
-            <input type="button" value="Enter" onClick = "calc.enter()"/>
         </main>
+        <input type="button" id = "enter" value="Enter" onClick = "calc.enter()"/>
     </body>
 </html>

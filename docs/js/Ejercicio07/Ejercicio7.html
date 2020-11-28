@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Ejerecicio 7</title>
+        <link rel="stylesheet" href="Ejercicio7.css"/>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="Ejercicio7.js"></script>
+    </head>
+    <body>
+        <h1>Ejerecicio 7</h1>
+        <h2>Prueba de jQuery</h2>
+        <input type="button" value="Recorrer documento" onclick="doc.recorrer()"/>
+        <h3>Párrafo</h3>
+        <p>Ejemplo de párrafo</p>
+        <input type="button" value="Ocultar párrafos" onclick="doc.ocultarParrafos()"/>
+        <input type="button" value="Mostrar párrafos" onclick="doc.mostrarParrafos()"/>
+        <h3>Lista</h3>
+        <ul>
+            <li id = "lista1"> 
+                <p id = "textoLista1">Elemento 1</p> <input id = "campoLista1" type="text"/> <input type="button" value="Modificar" onclick="doc.modificarLista(1)"/> 
+            </li>
+        </ul>
+        <input type="button" value="Ocultar lista" onclick="doc.ocultarLista()"/>
+        <input type="button" value="Mostrar lista" onclick="doc.mostrarLista()"/>
+        <input type="button" value="Añadir elemento" onclick="doc.addElemento()"/>
+        <input type="button" value="Eliminar último elemento" onclick="doc.eliminarElemento()"/>
+        <h3>Tabla modificable</h3>
+        <table id = "tablaModificable">
+            <tr id = "fila1">
+                <td id = "textoFila1">Fila 1</td>
+                <td><input id = "campoFila1" type="text"/> <input type="button" value="Modificar" onclick="doc.modificarTabla(1)"/></td>
+            </tr>
+        </table>
+        <p>
+            <input type="button" value="Ocultar tabla" onclick="doc.ocultarTabla()"/>
+            <input type="button" value="Mostrar tabla" onclick="doc.mostrarTabla()"/>
+            <input type="button" value="Añadir fila" onclick="doc.addFila()"/>
+            <input type="button" value="Eliminar última fila" onclick="doc.eliminarFila()"/>
+        </p>
+        <h3>Tabla de números</h3>
+        <table id = "tablaNumeros">
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+        </table>
+        <p id = "sumaTabla"><input type="button" value="Sumar filas y columnas" onclick="doc.sumarTabla()"/></p>
+    </body>
+</html>

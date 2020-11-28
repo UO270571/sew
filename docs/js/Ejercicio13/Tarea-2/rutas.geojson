@@ -1,0 +1,94 @@
+{
+   "type":"FeatureCollection",
+   "name":"Rutas",
+   "features":[
+      {
+         "type":"Feature",
+         "properties":{
+            "Name":"Ruta de Oviedo a Trubia",
+            "description":"Ruta en bicicleta de Oviedo a Trubia siguiendo la antigua línea de tren"
+         },
+         "geometry":{
+            "type":"LineString",
+            "coordinates":[
+               [
+                  -5.852988,
+                  43.350262
+               ],
+               [
+                  -5.922837,
+                  43.318314
+               ],
+               [
+                  -5.929515,
+                  43.331112
+               ],
+               [
+                  -5.973696,
+                  43.344064
+               ]
+            ]
+         }
+      },
+      {
+         "type":"Feature",
+         "properties":{
+            "Name":"Ruta de Oviedo a Bueño",
+            "description":"Ruta desde el Parque de Invierno en Oviedo hasta Bueño para ver sus famosos hórreos"
+         },
+         "geometry":{
+            "type":"LineString",
+            "coordinates":[
+               [
+                  -5.852988,
+                  43.350262
+               ],
+               [
+                  -5.868386,
+                  43.333815
+               ],
+               [
+                  -5.870165,
+                  43.312378
+               ],
+               [
+                  -5.896043,
+                  43.31585
+               ]
+            ]
+         }
+      },
+      {
+         "type":"Feature",
+         "properties":{
+            "Name":"Ruta de Oviedo a Olloniego",
+            "description":"Ruta desde el Parque de Invierno hasta Olloniego"
+         },
+         "geometry":{
+            "type":"LineString",
+            "coordinates":[
+               [
+                  -5.852988,
+                  43.350262
+               ],
+               [
+                  -5.868386,
+                  43.333815
+               ],
+               [
+                  -5.869424,
+                  43.311773
+               ],
+               [
+                  -5.860512,
+                  43.307545
+               ],
+               [
+                  -5.825414,
+                  43.299045
+               ]
+            ]
+         }
+      } 
+   ]
+}

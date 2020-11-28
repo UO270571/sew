@@ -1,0 +1,29 @@
+body{
+    background-color:white;
+    color:black;
+}
+h1{
+    text-align:start;
+    font-family: Arial, Helvetica, sans-serif;
+    color:red;
+}
+
+h2{
+    text-align:start;
+    font-family: Arial, Helvetica, sans-serif;
+    color:green;
+}
+
+h3{
+    text-align:start;
+    font-family: Arial, Helvetica, sans-serif;
+    color:blue;
+}
+
+table, th, td {
+	border: 0.1em solid;
+}
+
+input[type = "button"] {
+    margin: 0.5em;
+}
