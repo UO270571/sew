@@ -23,7 +23,7 @@ input.func {
     color: white;
 }
 
-main {
+#botones {
     display: grid;
     grid-template-columns: 5em 5em 5em 5em;
 }
@@ -34,7 +34,7 @@ main {
     border-radius: 0.5em;
 }
 
-main input {
+#botones input {
     margin: 0.7em;
     width: 3.6em;
     border-radius: 15%;

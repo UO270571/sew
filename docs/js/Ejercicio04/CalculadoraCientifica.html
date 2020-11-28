@@ -10,8 +10,9 @@
     </head>
     <body>
         <h1>Calculadora Científica</h1>
+        <label for = "expresion">Pantalla:</label>
         <p><input type="text" id="expresion" disabled/></p>
-        <main>
+        <div id = "botones">
             <input type="button" class= "memoria" value="MR" onClick = "calc.clickMr()"/>
             <input type="button" class= "memoria" value="MC" onClick = "calc.clickMc()"/>
             <input type="button" class= "memoria" value="M+" onClick = "calc.clickMplus()"/>
@@ -48,6 +49,6 @@
             <input type="button" value="." onClick = "calc.clickDot()"/>
             <input type="button" value="C" onClick = "calc.clickClear()"/>
             <input type="button" value="=" onClick = "calc.clickEqual()"/>
-        </main>
+        </div>
     </body>
 </html>
