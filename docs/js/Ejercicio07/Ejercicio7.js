@@ -45,7 +45,8 @@ class Documento {
 
     addElemento() {
         var n = $("li").length + 1;
-        $("ul").append('<li id = lista' + n + '> <p id = "textoLista' + n + '">Elemento ' + n + ' </p> <input id = "campoLista' + n + 
+        $("ul").append('<li id = lista' + n + '> <p id = "textoLista' + n + '"><label for = "campoLista' + n + '">Elemento' + n + 
+        ' </label></p> <input id = "campoLista' + n + 
             '" type="text"/> <input type="button" value="Modificar" onclick="doc.modificarLista(' + n + ')"/> </li>');
     }
 
@@ -58,7 +59,7 @@ class Documento {
     addFila() {
         var n = $("#tablaModificable tr").length + 1;
         $("#tablaModificable").append('<tr id = "fila' + n + '">' +
-                            '<td id = "textoFila' + n + '">Fila ' + n + '</td>' +
+                            '<td id = "textoFila' + n + '"><label for = "campoFila' + n + '">Fila ' + n + '</label></td>' +
                             '<td><input id = "campoFila' + n + '" type="text"/> <input type="button" value="Modificar" onclick="doc.modificarTabla(' + n + ')"/></td>' +
                         '</tr>' );
     }

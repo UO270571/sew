@@ -20,7 +20,7 @@
         <h3>Lista</h3>
         <ul>
             <li id = "lista1"> 
-                <p id = "textoLista1">Elemento 1</p> <input id = "campoLista1" type="text"/> <input type="button" value="Modificar" onclick="doc.modificarLista(1)"/> 
+                <p id = "textoLista1"><label for = "campoLista1">Elemento 1</label></p> <input id = "campoLista1" type="text"/> <input type="button" value="Modificar" onclick="doc.modificarLista(1)"/> 
             </li>
         </ul>
         <input type="button" value="Ocultar lista" onclick="doc.ocultarLista()"/>
@@ -30,7 +30,7 @@
         <h3>Tabla modificable</h3>
         <table id = "tablaModificable">
             <tr id = "fila1">
-                <td id = "textoFila1">Fila 1</td>
+                <td id = "textoFila1"><label for = "campoFila1">Fila 1</label></td>
                 <td><input id = "campoFila1" type="text"/> <input type="button" value="Modificar" onclick="doc.modificarTabla(1)"/></td>
             </tr>
         </table>
