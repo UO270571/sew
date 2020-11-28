@@ -18,12 +18,18 @@
             </select>
         </p>
         <p>
+            <label for="texto">Texto original:</label>
+        </p>
+        <p>
             <textarea id = "texto" rows="10" cols="50">Introducir texto</textarea>
         </p>
         <p>
             <label for="idiomas">Idioma de destino:</label>
             <select id = "idiomas" name="idiomas"></select>
             <input type="button" value="Traducir" onclick="traductor.traducir()"/>
+        </p>
+        <p>
+            <label for="resultado">Texto traducido:</label>
         </p>
         <p>
             <textarea id = "resultado" rows="10" cols="50" disabled>Traducción</textarea>
