@@ -11,7 +11,7 @@ class CalculadoraFechas {
         var dia = document.getElementById('dia').value;
         var mes = document.getElementById('mes').value;
         var anyo = document.getElementById('anyo').value;
-        if(this.comprobarDatos(dia, mes, anyo), "info")
+        if(this.comprobarDatos(dia, mes, anyo, "info"))
             this.setFecha(dia, mes, anyo);
     }
 
@@ -19,7 +19,7 @@ class CalculadoraFechas {
         var dia = document.getElementById('dia2').value;
         var mes = document.getElementById('mes2').value;
         var anyo = document.getElementById('anyo2').value;
-        if(this.comprobarDatos(dia, mes, anyo), "resultado")
+        if(this.comprobarDatos(dia, mes, anyo, "resultado"))
             this.setSegundaFecha(dia, mes, anyo);
     }
 
