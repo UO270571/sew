@@ -25,7 +25,7 @@ class Mapa {
         var lon = coords.lng();
         var idioma = "es";
         var unidades = "metric";
-        var url = "http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&units=" + unidades + "&lang=" + idioma + "&appid=" + apiKey;
+        var url = "https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&units=" + unidades + "&lang=" + idioma + "&appid=" + apiKey;
 
         $.ajax({
             dataType: "json",
