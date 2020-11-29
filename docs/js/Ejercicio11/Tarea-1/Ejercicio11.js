@@ -7,13 +7,13 @@ class GeoLocalizacion {
     }
 
     mostrarCoordenadas(posicion)  {
-        $("body").append("<p>Latitud: " + posicion.coords.latitude + " grados</p>");
-        $("body").append("<p>Longitud: " + posicion.coords.longitude + " grados</p>");
-        $("body").append("<p>Altitud: " + posicion.coords.altitude + " metros</p>");
-        $("body").append("<p>Precisión coordenadas: " + posicion.coords.accuracy + " metros</p>");
-        $("body").append("<p>Precisión altitud: " + posicion.coords.altitudeAccuracy + " metros</p>");
-        $("body").append("<p>Velocidad: " + posicion.coords.speed + " m/s</p>");
-        $("body").append("<p>Rumbo: " + posicion.coords.heading + " grados</p>");
+        $("#resultados").append("<li>Latitud: " + posicion.coords.latitude + " grados</li>");
+        $("#resultados").append("<li>Longitud: " + posicion.coords.longitude + " grados</li>");
+        $("#resultados").append("<li>Altitud: " + posicion.coords.altitude + " metros</li>");
+        $("#resultados").append("<li>Precisión coordenadas: " + posicion.coords.accuracy + " metros</li>");
+        $("#resultados").append("<li>Precisión altitud: " + posicion.coords.altitudeAccuracy + " metros</li>");
+        $("#resultados").append("<li>Velocidad: " + posicion.coords.speed + " m/s</li>");
+        $("#resultados").append("<li>Rumbo: " + posicion.coords.heading + " grados</li>");
     }
 }
 
