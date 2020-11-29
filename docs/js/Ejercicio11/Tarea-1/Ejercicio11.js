@@ -7,6 +7,7 @@ class GeoLocalizacion {
     }
 
     mostrarCoordenadas(posicion)  {
+        $("#resultados").text("");
         $("#resultados").append("<li>Latitud: " + posicion.coords.latitude + " grados</li>");
         $("#resultados").append("<li>Longitud: " + posicion.coords.longitude + " grados</li>");
         $("#resultados").append("<li>Altitud: " + posicion.coords.altitude + " metros</li>");
