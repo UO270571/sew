@@ -14,8 +14,8 @@ textarea {
 }
 
 input.operador {
-    background-color: red;
-    color: white;
+    background-color: #FF6666;
+    color: black;
 }
 
 input.func {

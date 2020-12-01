@@ -14,13 +14,13 @@ input {
 }
 
 input.memoria {
-    background-color: gray;
+    background-color: #575757;
     color: white;
 }
 
 input.operador {
-    background-color: red;
-    color: white;
+    background-color: #FF6666;
+    color: black;
 }
 
 #botones {
