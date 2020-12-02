@@ -1,0 +1,36 @@
+body{
+    background-color:white;
+    color:black;
+}
+h1{
+    text-align:start;
+    font-family: Arial, Helvetica, sans-serif;
+    color:red;
+}
+
+input {
+    margin: 0.7em;
+    width: 21em;
+}
+
+input.memoria {
+    background-color: #575757;
+    color: white;
+}
+
+input.operador {
+    background-color: #FF6666;
+    color: black;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 5em 5em 5em 5em;
+    grid-template-rows: auto auto auto auto auto;
+}
+
+form input {
+    margin: 0.7em;
+    width: 3.6em;
+    border-radius: 15%;
+}
