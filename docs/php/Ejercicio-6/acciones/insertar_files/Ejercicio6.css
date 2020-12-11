@@ -47,7 +47,7 @@ form ul li {
     margin-bottom: 0.5em;
 }
 
-input[type = "text"], input[type = "number"], textarea {
+input[type = "text"], input[type = "number"], textarea, fieldset {
     padding: 0.8em 1.1em;
     margin: 0.5em 0em;
     display: inline-block;
@@ -58,6 +58,10 @@ input[type = "text"], input[type = "number"], textarea {
 
 input[type = "text"], textarea {
     max-width: 50em;
+}
+
+fieldset {
+    max-width: 41.7em;
 }
 
 input[type = "number"] {

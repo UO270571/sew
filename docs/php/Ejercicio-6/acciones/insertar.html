@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0063)http://localhost/PracticasPHP/Ejercicio-6/acciones/insertar.php -->
+<!-- saved from url=(0014)about:internet -->
 <html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,21 +22,23 @@
         <input type="text" name="telefono" id="telefono">
         <label for="edad">Edad de la persona: </label>
         <input type="number" min="0" name="edad" id="edad">
-        <p>Sexo de la persona: </p>
-        <ul>
-            <li>
-                <input type="radio" name="sexo" id="hombre" value="Hombre" checked="">
-                <label for="hombre">Hombre</label>
-            </li>
-            <li>
-                <input type="radio" name="sexo" id="mujer" value="Mujer">
-                <label for="mujer">Mujer</label>
-            </li>
-            <li>
-                <input type="radio" name="sexo" id="otro" value="Otro">
-                <label for="otro">Otro</label>
-            </li>
-        </ul>
+        <fieldset>
+            <legend>Sexo de la persona: </legend>
+            <ul>
+                <li>
+                    <input type="radio" name="sexo" id="hombre" value="Hombre" checked="">
+                    <label for="hombre">Hombre</label>
+                </li>
+                <li>
+                    <input type="radio" name="sexo" id="mujer" value="Mujer">
+                    <label for="mujer">Mujer</label>
+                </li>
+                <li>
+                    <input type="radio" name="sexo" id="otro" value="Otro">
+                    <label for="otro">Otro</label>
+                </li>
+            </ul>
+        </fieldset>
         <label for="conocimientos">Nivel o pericia informática de la persona: </label>
         <input type="number" min="0" max="10" name="conocimientos" id="conocimientos">
         <label for="tiempo">Tiempo de la prueba en segundos: </label>
