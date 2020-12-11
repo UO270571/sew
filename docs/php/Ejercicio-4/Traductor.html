@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)http://localhost/PracticasPHP/Ejercicio-4/Ejercicio4.php -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traductor</title>
+    <link rel="stylesheet" href="./Traductor_files/Ejercicio4.css">
+</head>
+
+<body>
+    <h1>Traductor</h1>
+
+    
+                    <p>
+                        <label for="idiomasOrigen">Idioma de origen:</label>
+                        <select id="idiomasOrigen" name="idiomasOrigen" form="formulario">
+                            <option value="detectar">Detectar idioma</option><option value="af">Afrikaans</option><option value="ar">Árabe</option><option value="as">Assamese</option><option value="bg">Búlgaro</option><option value="bn">Bangla</option><option value="bs">Bosnio</option><option value="ca">Catalán</option><option value="cs">Checo</option><option value="cy">Galés</option><option value="da">Danés</option><option value="de">Alemán</option><option value="el">Griego</option><option value="en">Inglés</option><option value="es">Español</option><option value="et">Estonio</option><option value="fa">Persa</option><option value="fi">Finlandés</option><option value="fil">Filipino</option><option value="fj">Fiyiano</option><option value="fr">Francés</option><option value="fr-ca">French (Canada)</option><option value="ga">Irlandés</option><option value="gu">Gujarati</option><option value="he">Hebreo</option><option value="hi">Hindi</option><option value="hr">Croata</option><option value="ht">Criollo Haitiano</option><option value="hu">Húngaro</option><option value="id">Indonesio</option><option value="is">Islandés</option><option value="it">Italiano</option><option value="ja">Japonés</option><option value="kk">Kazajo</option><option value="kmr">Kurdish (Northern)</option><option value="kn">Kannada</option><option value="ko">Coreano</option><option value="ku">Kurdish (Central)</option><option value="lt">Lituano</option><option value="lv">Letón</option><option value="mg">Malgache</option><option value="mi">Maorí</option><option value="ml">Malayalam</option><option value="mr">Marathi</option><option value="ms">Malayo</option><option value="mt">Maltés</option><option value="mww">Hmong daw</option><option value="nb">Noruego</option><option value="nl">Holandés</option><option value="or">Odia</option><option value="otq">Otomí Querétaro</option><option value="pa">Punjabí</option><option value="pl">Polaco</option><option value="prs">Dari</option><option value="ps">Pashto</option><option value="pt">Portugués (Brasil)</option><option value="pt-pt">Portugués (Portugal)</option><option value="ro">Rumano</option><option value="ru">Ruso</option><option value="sk">Eslovaco</option><option value="sl">Esloveno</option><option value="sm">Samoano</option><option value="sr-Cyrl">Serbio (cirílico)</option><option value="sr-Latn">Serbio (latino)</option><option value="sv">Sueco</option><option value="sw">Kiswahili</option><option value="ta">Tamil</option><option value="te">Telugu</option><option value="th">Tailandés</option><option value="tlh-Latn">Klingon (Latin)</option><option value="tlh-Piqd">Klingon (pIqaD)</option><option value="to">Tongano</option><option value="tr">Turco</option><option value="ty">Tahitiano</option><option value="uk">Ucraniano</option><option value="ur">Urdu</option><option value="vi">Vietnamita</option><option value="yua">Maya Yucateco</option><option value="yue">Cantonés (tradicional)</option><option value="zh-Hans">Chino simplificado</option><option value="zh-Hant">Chino tradicional</option>
+                        </select>
+                    </p>
+                <p>
+                    <label for="texto">Texto original:</label>
+                </p>
+                 <p>
+                    <textarea id="texto" name="texto" rows="10" cols="50" form="formulario">Introducir texto</textarea>
+                </p>
+                <form action="http://localhost/PracticasPHP/Ejercicio-4/Ejercicio4.php#" method="post" id="formulario">
+                        <label for="idiomas">Idioma de destino:</label>
+                        <select id="idiomas" name="idiomas" form="formulario"><option value="af">Afrikaans</option><option value="ar">Árabe</option><option value="as">Assamese</option><option value="bg">Búlgaro</option><option value="bn">Bangla</option><option value="bs">Bosnio</option><option value="ca">Catalán</option><option value="cs">Checo</option><option value="cy">Galés</option><option value="da">Danés</option><option value="de">Alemán</option><option value="el">Griego</option><option value="en">Inglés</option><option value="es">Español</option><option value="et">Estonio</option><option value="fa">Persa</option><option value="fi">Finlandés</option><option value="fil">Filipino</option><option value="fj">Fiyiano</option><option value="fr">Francés</option><option value="fr-ca">French (Canada)</option><option value="ga">Irlandés</option><option value="gu">Gujarati</option><option value="he">Hebreo</option><option value="hi">Hindi</option><option value="hr">Croata</option><option value="ht">Criollo Haitiano</option><option value="hu">Húngaro</option><option value="id">Indonesio</option><option value="is">Islandés</option><option value="it">Italiano</option><option value="ja">Japonés</option><option value="kk">Kazajo</option><option value="kmr">Kurdish (Northern)</option><option value="kn">Kannada</option><option value="ko">Coreano</option><option value="ku">Kurdish (Central)</option><option value="lt">Lituano</option><option value="lv">Letón</option><option value="mg">Malgache</option><option value="mi">Maorí</option><option value="ml">Malayalam</option><option value="mr">Marathi</option><option value="ms">Malayo</option><option value="mt">Maltés</option><option value="mww">Hmong daw</option><option value="nb">Noruego</option><option value="nl">Holandés</option><option value="or">Odia</option><option value="otq">Otomí Querétaro</option><option value="pa">Punjabí</option><option value="pl">Polaco</option><option value="prs">Dari</option><option value="ps">Pashto</option><option value="pt">Portugués (Brasil)</option><option value="pt-pt">Portugués (Portugal)</option><option value="ro">Rumano</option><option value="ru">Ruso</option><option value="sk">Eslovaco</option><option value="sl">Esloveno</option><option value="sm">Samoano</option><option value="sr-Cyrl">Serbio (cirílico)</option><option value="sr-Latn">Serbio (latino)</option><option value="sv">Sueco</option><option value="sw">Kiswahili</option><option value="ta">Tamil</option><option value="te">Telugu</option><option value="th">Tailandés</option><option value="tlh-Latn">Klingon (Latin)</option><option value="tlh-Piqd">Klingon (pIqaD)</option><option value="to">Tongano</option><option value="tr">Turco</option><option value="ty">Tahitiano</option><option value="uk">Ucraniano</option><option value="ur">Urdu</option><option value="vi">Vietnamita</option><option value="yua">Maya Yucateco</option><option value="yue">Cantonés (tradicional)</option><option value="zh-Hans">Chino simplificado</option><option value="zh-Hant">Chino tradicional</option>
+                        </select>
+                    <input type="submit" name="traducir" value="Traducir">
+                </form>
+                    <p>
+                        <label for="resultado">Texto traducido:</label>
+                    </p>
+                    <p>
+                        <textarea id="resultado" rows="10" cols="50" disabled="">Traducción</textarea>
+                    </p>
+
+
+</body></html>
