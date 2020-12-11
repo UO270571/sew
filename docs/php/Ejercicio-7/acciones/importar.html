@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)http://localhost/PracticasPHP/Ejercicio-7/acciones/importar.php -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión concesionario</title>
+    <link rel="stylesheet" href="./importar_files/Ejercicio7.css">
+</head>
+
+<body>
+    <h1>Importar datos desde archivos</h1>
+
+    <form enctype="multipart/form-data" action="http://localhost/PracticasPHP/Ejercicio-7/acciones/importar.php#" method="post" id="formulario">
+        <p>
+            <label for="archivo">Selecciona un archivo para importar los clientes: </label>
+            <input type="file" name="clientes" id="archivo">
+        </p>
+        <p>
+            <label for="archivo">Selecciona un archivo para importar los vehiculos: </label>
+            <input type="file" name="vehiculos" id="archivo">
+        </p>
+        <p>
+            <label for="archivo">Selecciona un archivo para importar los pedidos: </label>
+            <input type="file" name="pedidos" id="archivo">
+        </p>
+        <p>
+            <label for="archivo">Selecciona un archivo para importar las ventas: </label>
+            <input type="file" name="ventas" id="archivo">
+        </p>
+        <input type="submit" name="enviar" value="Enviar archivos">
+    </form>
+
+
+
+</body></html>

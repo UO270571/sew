@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!-- saved from url=(0069)http://localhost/PracticasPHP/Ejercicio-7/acciones/insertarPedido.php -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión concesionario</title>
+    <link rel="stylesheet" href="./insertarpedido_files/Ejercicio7.css">
+</head>
+
+<body>
+    <h1>Hacer un pedido</h1>
+    <form action="http://localhost/PracticasPHP/Ejercicio-7/acciones/insertarPedido.php#" method="post" id="formulario">
+        <label for="vehiculo">Código del vehículo a pedir: </label>
+        <select id="vehiculo" name="codigo">
+        <option value="1963">[1963] Lamborghini Centenario</option><option value="1995">[1995] McLaren F1</option><option value="9113">[9113] Porsche GT3</option>        </select>
+        <label for="unidades">Unidades del vehículo: </label>
+        <input type="number" min="1" name="unidades" id="unidades">
+        <input type="submit" name="insertar" value="Enviar">
+    </form>
+
+
+</body></html>
