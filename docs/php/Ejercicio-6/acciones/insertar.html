@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)http://localhost/PracticasPHP/Ejercicio-6/acciones/insertar.php -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión base de datos</title>
+    <link rel="stylesheet" href="./insertar_files/Ejercicio6.css">
+</head>
+
+<body>
+    <h1>Insertar en la tabla</h1>
+    <form action="http://localhost/PracticasPHP/Ejercicio-6/acciones/insertar.php#" method="post" id="formulario">
+        <label for="codigo">Código de la persona: </label>
+        <input type="text" name="codigo" id="codigo">
+        <label for="nombre">Nombre de la persona: </label>
+        <input type="text" name="nombre" id="nombre">
+        <label for="apellidos">Apellidos de la persona: </label>
+        <input type="text" name="apellidos" id="apellidos">
+        <label for="email">E-mail de la persona: </label>
+        <input type="text" name="email" id="email">
+        <label for="telefono">Teléfono de la persona: </label>
+        <input type="text" name="telefono" id="telefono">
+        <label for="edad">Edad de la persona: </label>
+        <input type="number" min="0" name="edad" id="edad">
+        <p>Sexo de la persona: </p>
+        <ul>
+            <li>
+                <input type="radio" name="sexo" id="hombre" value="Hombre" checked="">
+                <label for="hombre">Hombre</label>
+            </li>
+            <li>
+                <input type="radio" name="sexo" id="mujer" value="Mujer">
+                <label for="mujer">Mujer</label>
+            </li>
+            <li>
+                <input type="radio" name="sexo" id="otro" value="Otro">
+                <label for="otro">Otro</label>
+            </li>
+        </ul>
+        <label for="conocimientos">Nivel o pericia informática de la persona: </label>
+        <input type="number" min="0" max="10" name="conocimientos" id="conocimientos">
+        <label for="tiempo">Tiempo de la prueba en segundos: </label>
+        <input type="number" min="0" name="tiempo" id="tiempo">
+        <p>
+            <input type="checkbox" name="correcta" id="correcta" value="true">
+            <label for="correcta">Tarea realizada correctamente</label>
+        </p>
+        <label for="comentarios">Comentarios sobre problemas encontrados: </label>
+        <textarea id="comentarios" name="comentarios" rows="10" cols="50" form="formulario"></textarea>
+        <label for="propuestas">Propuestas de mejora: </label>
+        <textarea id="propuestas" name="propuestas" rows="10" cols="50" form="formulario"></textarea>
+        <label for="valoracion">Valoración de la aplicación: </label>
+        <input type="number" min="0" max="10" name="valoracion" id="valoracion">
+        <input type="submit" name="insertar" value="Insertar">
+    </form>
+
+
+</body></html>

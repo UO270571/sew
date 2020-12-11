@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- saved from url=(0064)http://localhost/PracticasPHP/Ejercicio-6/acciones/modificar.php -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión base de datos</title>
+    <link rel="stylesheet" href="./modificar_files/Ejercicio6.css">
+</head>
+
+<body>
+    <h1>Modificar datos de la tabla</h1>
+    <form action="http://localhost/PracticasPHP/Ejercicio-6/acciones/modificar.php#" method="post" id="formulario">
+        <label for="codigo">Código de la persona a modificar: </label>
+        <input type="text" name="codigo" id="codigo">
+        <label for="nombre">Nuevo nombre de la persona: </label>
+        <input type="text" name="nombre" id="nombre">
+        <label for="apellidos">Nuevos apellidos de la persona: </label>
+        <input type="text" name="apellidos" id="apellidos">
+        <label for="email">Nuevo e-mail de la persona: </label>
+        <input type="text" name="email" id="email">
+        <label for="telefono">Nuevo teléfono de la persona: </label>
+        <input type="text" name="telefono" id="telefono">
+        <label for="edad">Nueva edad de la persona: </label>
+        <input type="number" min="0" name="edad" id="edad">
+        <p>Nuevo sexo de la persona: </p>
+        <ul>
+            <li>
+                <input type="radio" name="sexo" id="hombre" value="Hombre" checked="">
+                <label for="hombre">Hombre</label>
+            </li>
+            <li>
+                <input type="radio" name="sexo" id="mujer" value="Mujer">
+                <label for="mujer">Mujer</label>
+            </li>
+            <li>
+                <input type="radio" name="sexo" id="otro" value="Otro">
+                <label for="otro">Otro</label>
+            </li>
+        </ul>
+        <label for="conocimientos">Nuevo nivel o pericia informática de la persona: </label>
+        <input type="number" min="0" max="10" name="conocimientos" id="conocimientos">
+        <label for="tiempo">Nuevo tiempo de la prueba en segundos: </label>
+        <input type="number" min="0" name="tiempo" id="tiempo">
+        <p>
+            <input type="checkbox" name="correcta" id="correcta" value="true">
+            <label for="correcta">Tarea realizada correctamente</label>
+        </p>
+        <label for="comentarios">Nuevos comentarios sobre problemas encontrados: </label>
+        <textarea id="comentarios" name="comentarios" rows="10" cols="50" form="formulario"></textarea>
+        <label for="propuestas">Nuevas propuestas de mejora: </label>
+        <textarea id="propuestas" name="propuestas" rows="10" cols="50" form="formulario"></textarea>
+        <label for="valoracion">Nueva valoración de la aplicación: </label>
+        <input type="number" min="0" max="10" name="valoracion" id="valoracion">
+        <input type="submit" name="modificar" value="Modificar">
+    </form>
+
+
+</body></html>
